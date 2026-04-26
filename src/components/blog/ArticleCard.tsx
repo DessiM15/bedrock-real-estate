@@ -12,7 +12,14 @@ interface ArticleCardProps {
   index?: number;
 }
 
+const articleImages = [
+  "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+];
+
 export function ArticleCard({ article, index = 0 }: ArticleCardProps) {
+  const imageUrl = articleImages[index % 2];
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 30 }}
@@ -30,7 +37,7 @@ export function ArticleCard({ article, index = 0 }: ArticleCardProps) {
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop')`,
+              backgroundImage: `url('${imageUrl}')`,
             }}
           />
         </div>

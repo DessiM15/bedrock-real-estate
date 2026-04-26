@@ -17,6 +17,6 @@ export const team: TeamMember[] = [
     name: "Hannah Townsend",
     role: "Operations & Marketing Director",
     bio: "Hannah drives Bedrock's operations and marketing strategy. With a background in business development and digital marketing, she plays a key role in building the Bedrock brand and connecting investors with opportunities that align with their financial goals.",
-    image: "/images/team/hannah-townsend.webp",
+    image: "/images/team/hannah-townsend.jpeg",
   },
 ];
